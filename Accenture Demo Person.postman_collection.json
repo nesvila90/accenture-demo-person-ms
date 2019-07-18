@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "cb6c8f61-55c7-4378-8aad-7294714bc577",
+		"name": "Accenture Demo Person",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find All - Accenture",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/accenture/demo/api/persona/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accenture",
+						"demo",
+						"api",
+						"persona",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Person",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"birthDate\": \"2009-02-04\",\n    \"email\": \"correo@electronico.com\",\n    \"firstName\": \"Wilter\",\n    \"genre\": \"M\",\n    \"idType\": \"CC\",\n    \"lastName\": \"Villar\",\n    \"numberId\": 1215454879\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/accenture/demo/api/persona/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accenture",
+						"demo",
+						"api",
+						"persona",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Person",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"birthDate\": \"2009-02-04\",\n    \"email\": \"correo@electronico.com\",\n    \"firstName\": \"Wilter\",\n    \"genre\": \"M\",\n    \"idType\": \"CC\",\n    \"lastName\": \"Villar\",\n    \"numberId\": 1215454879\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/accenture/demo/api/persona/v1/type/CC/identification/1215454879",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accenture",
+						"demo",
+						"api",
+						"persona",
+						"v1",
+						"type",
+						"CC",
+						"identification",
+						"1215454879"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Person",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/accenture/demo/api/persona/v1/type/CC/identification/1215454879",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accenture",
+						"demo",
+						"api",
+						"persona",
+						"v1",
+						"type",
+						"CC",
+						"identification",
+						"1215454879"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Person by Id And Type Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/accenture/demo/api/persona/v1/type/CC/identification/1215454879",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accenture",
+						"demo",
+						"api",
+						"persona",
+						"v1",
+						"type",
+						"CC",
+						"identification",
+						"1215454879"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

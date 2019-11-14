@@ -10,8 +10,7 @@ mvn install -Dmaven.test.skip=true'''
     }
     stage('test') {
       steps {
-        sh '''cd persona
-mvn test '''
+        sh 'mvn test '
       }
     }
   }

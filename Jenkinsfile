@@ -10,7 +10,8 @@ mvn install -Dmaven.test.skip=true'''
     }
     stage('test') {
       steps {
-        sh 'mvn test '
+        sh '''cd person
+mvn test'''
       }
     }
   }

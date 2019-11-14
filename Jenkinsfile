@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''echo ###NO SEA SAPO###
 cd person
-mvn clean install'''
+mvn clean install -Dmaven.test.skip=true'''
       }
     }
   }
